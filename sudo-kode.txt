@@ -1,0 +1,66 @@
+Initialize method(string)
+  Slice chunks of nine characters from the string, assign to arrays, combine the arrays into one array, and push arrays to our board array
+end
+
+get row method(index)
+  Assign board[index] to an instance variable. Return it.
+end
+
+  make column
+    Transpose rows and assign them to an array
+  end
+
+get column(index)
+  For 0..8
+    assign each board[i][index] to an array
+  return the array
+end
+
+
+solve
+  until is_solved?
+    for i in rows
+      for j in columns
+        solve_cell
+  end
+    return board.to_s
+
+is_solved?
+  for each row, column, box no_doubles?
+end
+
+solve_cell
+  CREATE array 1-9 of not found
+  remove results from get_row
+  remove results from get_col
+  remove results from get_box
+  if not_found is size 1, cell is solved
+end
+
+get_row(row)
+  board[row]
+end
+
+get_col(col)
+  for each row,
+    collect row[col]
+end
+
+get_box(row, col)
+  set_start_point
+    (0-2)
+      (0-2)
+        collect
+end
+
+set_start_point(row, col)
+  [] << row / 2 * 3
+  [] << col / 2 * 3
+  return []
+end
+
+
+
+
+no_doubles?
+end
